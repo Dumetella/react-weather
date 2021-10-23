@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import { Weather, WeatherLocation } from '../model/Weather';
 
-const server = 'http://localhost:5000';
+const server = 'http://boiling-basin-64361.herokuapp.com';
 //const server = window.location.host
 
 async function searchLocation(term: string): Promise<WeatherLocation | undefined> {
