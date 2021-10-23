@@ -1,0 +1,40 @@
+{
+  "name": "react_weather",
+  "version": "1.0.0",
+  "description": "react weather",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --port 3000",
+    "build": "webpack"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "Dumetella",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.176",
+    "@types/mini-css-extract-plugin": "^2.4.0",
+    "@types/react": "^17.0.31",
+    "@types/react-dom": "^17.0.9",
+    "css-loader": "^6.4.0",
+    "html-webpack-plugin": "^5.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/material": "^5.0.4",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
