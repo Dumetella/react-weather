@@ -32,9 +32,10 @@ export default function WeatherSummary(props: WeatherSummaryProps): JSX.Element 
   return (
     <Box sx={{ pb: 20 }}>
       <hr />
-      <Typography variant="h4">{props.location?.name} weather now </Typography>
+      {/* <Typography variant="h4">{props.location?.name} weather now </Typography> */}
       <WeatherEntry weather={weather} />
-      <Typography variant="h4">{props.location?.name} forecast</Typography>
+      <hr />
+      {/* <Typography variant="h4">{props.location?.name} forecast</Typography> */}
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={1}>
           {forecast.map(timePoint =>

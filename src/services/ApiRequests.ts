@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import { Weather, WeatherLocation } from '../model/Weather';
 
-const server = 'http://boiling-basin-64361.herokuapp.com';
-//const server = window.location.host
+//const server = window.location.origin;
+const server = 'http://localhost:5000';
 
 async function searchLocation(term: string): Promise<WeatherLocation | undefined> {
 
@@ -63,8 +63,8 @@ export function getIconUrl(code: string): string {
   return `http://openweathermap.org/img/wn/${code}.png`;
 }
 
-export const debounceLocation: any = _.debounce(searchLocation, 1000, { leading: true });
+export const debounceLocation: any = _.debounce(searchLocation, 500, { leading: true });
 
-export const debounceWeather: any = _.debounce(readWeather, 1000, { leading: true });
+export const debounceWeather: any = _.debounce(readWeather, 500, { leading: true });
 
-export const debounceForecast: any = _.debounce(readForecast, 1000, { leading: true });
+export const debounceForecast: any = _.debounce(readForecast, 500, { leading: true });

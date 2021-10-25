@@ -11,7 +11,6 @@ interface LocationTableProps {
 export default function LocationTable(props: LocationTableProps): JSX.Element {
   return (
     <List>
-      <Typography variant="h3">Locations:</Typography>
       {props.locations.map(location =>
         <ListItem key={location.id}
           selected={props.current?.id === location.id ? true : false}
